@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr"><head><title>傻瓜式教程教你串流手机电脑</title><meta charset="utf-8"/><link rel="preload" href="../index-69237443.css" as="style"/><link rel="preload" href="../prescript-2bfc6315.js" as="script"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="MaxLOL"/><meta property="og:title" content="傻瓜式教程教你串流手机电脑"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="傻瓜式教程教你串流手机电脑"/><meta name="twitter:description" content="零基础教程：用手机低延迟操控家里的电脑 不需要懂网络，照着一步一步点就行。 全程大约 40 分钟，其中大部分时间在等安装。 做完之后：手机能像坐在电脑前一样操作它，延迟 30ms 左右，还能串流玩游戏。 这份教程能帮你做到什么 在外面上网时，用手机打开家里的电脑 用手机看电脑屏幕、点鼠标、敲键盘 移动设备连接键鼠延迟低到可以玩游戏 开始之前：先准备这些东西 需要什么说明大概花费一台 Windows 电脑Win10 / Win11 都行你已经有一部安卓手机安卓 10 以上你已经有一个 Tailscale 账号免费注册0 元一台云服务器（VPS）国内的，有公网 IP约 30~60 元/月（可免费试..."/><meta property="og:description" content="零基础教程：用手机低延迟操控家里的电脑 不需要懂网络，照着一步一步点就行。 全程大约 40 分钟，其中大部分时间在等安装。 做完之后：手机能像坐在电脑前一样操作它，延迟 30ms 左右，还能串流玩游戏。 这份教程能帮你做到什么 在外面上网时，用手机打开家里的电脑 用手机看电脑屏幕、点鼠标、敲键盘 移动设备连接键鼠延迟低到可以玩游戏 开始之前：先准备这些东西 需要什么说明大概花费一台 Windows 电脑Win10 / Win11 都行你已经有一部安卓手机安卓 10 以上你已经有一个 Tailscale 账号免费注册0 元一台云服务器（VPS）国内的，有公网 IP约 30~60 元/月（可免费试..."/><meta property="og:image:alt" content="零基础教程：用手机低延迟操控家里的电脑 不需要懂网络，照着一步一步点就行。 全程大约 40 分钟，其中大部分时间在等安装。 做完之后：手机能像坐在电脑前一样操作它，延迟 30ms 左右，还能串流玩游戏。 这份教程能帮你做到什么 在外面上网时，用手机打开家里的电脑 用手机看电脑屏幕、点鼠标、敲键盘 移动设备连接键鼠延迟低到可以玩游戏 开始之前：先准备这些东西 需要什么说明大概花费一台 Windows 电脑Win10 / Win11 都行你已经有一部安卓手机安卓 10 以上你已经有一个 Tailscale 账号免费注册0 元一台云服务器（VPS）国内的，有公网 IP约 30~60 元/月（可免费试..."/><meta property="twitter:domain" content="havvmax.github.io"/><meta property="og:url" content="https://havvmax.github.io/技术/傻瓜式教程教你串流手机电脑"/><meta property="twitter:url" content="https://havvmax.github.io/技术/傻瓜式教程教你串流手机电脑"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="零基础教程：用手机低延迟操控家里的电脑 不需要懂网络，照着一步一步点就行。 全程大约 40 分钟，其中大部分时间在等安装。 做完之后：手机能像坐在电脑前一样操作它，延迟 30ms 左右，还能串流玩游戏。 这份教程能帮你做到什么 在外面上网时，用手机打开家里的电脑 用手机看电脑屏幕、点鼠标、敲键盘 移动设备连接键鼠延迟低到可以玩游戏 开始之前：先准备这些东西 需要什么说明大概花费一台 Windows 电脑Win10 / Win11 都行你已经有一部安卓手机安卓 10 以上你已经有一个 Tailscale 账号免费注册0 元一台云服务器（VPS）国内的，有公网 IP约 30~60 元/月（可免费试..."/><meta name="generator" content="Quartz"/><link href="../index-69237443.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-735924e0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-589c1cea.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-bbc3f7c0.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-2911f5d1.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-e427079e.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-d5497797.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-53b25b2b.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-c93c6a44.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-8a06014f.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-77d6a441.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-6ee21cee.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-1ea6ad18.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-95d5233c.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-34bdfded.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-788c9ca3.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-642859cd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-4abc06bd.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-274a3dfe.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-94cb6c84.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-58d5ff56.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../component-7262b5a7.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-a5c806d2.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-6bd36952.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-9857b007.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="../static/resource-style-d3a1a224.css" rel="stylesheet" type="text/css" data-persist="true"/><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" data-persist="true"/><script src="../prescript-2bfc6315.js" type="application/javascript" data-persist="true"></script><script type="application/javascript" data-persist="true">const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted%20Grotesk%3Awght%40400%3B700&amp;family=Source%20Sans%20Pro%3Aital%2Cwght%400%2C400%3B0%2C600%3B1%2C400%3B1%2C600&amp;family=IBM%20Plex%20Mono%3Awght%40400%3B600&amp;display=swap"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://havvmax.github.io/技术/傻瓜式教程教你串流手机电脑-og-image.webp"/><meta property="og:image:url" content="https://havvmax.github.io/技术/傻瓜式教程教你串流手机电脑-og-image.webp"/><meta name="twitter:image" content="https://havvmax.github.io/技术/傻瓜式教程教你串流手机电脑-og-image.webp"/><meta property="og:image:type" content="image/webp"/></head><body data-slug="技术/傻瓜式教程教你串流手机电脑" data-basepath><div id="quartz-root" class="page" data-frame="default"><div id="quartz-body"><div class="left sidebar"><div class="sidebar-clock"><div class="clock-time">00:00:00</div><div class="clock-date"></div></div><h2 class="page-title"><a href="..">MaxLOL</a></h2><div class="mobile-only"><div class="spacer"></div></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 0.5rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button" aria-label="搜索" aria-expanded="false"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>搜索</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="搜索内容..." placeholder="搜索内容..."/><div class="search-layout" data-preview="true" data-field-priority="[&quot;title&quot;,&quot;content&quot;,&quot;tags&quot;]"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode" aria-label="暗色模式"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="暗色模式"><title>暗色模式</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="亮色模式"><title>亮色模式</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode" aria-label="阅读模式"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="阅读模式"><title>阅读模式</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer nav-files-container" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a2, b2) => {\n    if (!a2.isFolder &amp;&amp; !b2.isFolder || a2.isFolder &amp;&amp; b2.isFolder) {\n      return (a2.displayName || \&quot;\&quot;).localeCompare(b2.displayName || \&quot;\&quot;, void 0, {\n        numeric: true,\n        sensitivity: \&quot;base\&quot;\n      });\n    }\n    if (!a2.isFolder &amp;&amp; b2.isFolder) {\n      return 1;\n    }\n    return -1;\n  }&quot;,&quot;filterFn&quot;:&quot;(node) => node.slugSegment !== \&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;(node) => {\n    return node;\n  }&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-6" aria-label="探索"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>探索</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-6" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#" class="nav-file-title tree-item-self"></a></li></template><template id="template-folder"><li><div class="folder-container nav-folder-title tree-item-self"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon nav-folder-collapse-indicator collapse-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content tree-item-children"></ul></div></li></template></div><details class="timeline"><summary><h2>发布记录</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></summary><ul class="timeline-list"><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-10-25 22:03</div><div class="tl-summary">记录串流教程</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-10-25 18:44</div><div class="tl-summary">adjusted sth.</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-10-21 22:46</div><div class="tl-summary">优化发布逻辑</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-09-08 00:59</div><div class="tl-summary">发布记录适配手机端侧栏，桌面回归正常</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-31 20:23</div><div class="tl-summary">手机端回归原生侧栏</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-31 16:34</div><div class="tl-summary">经历+1</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-26 18:04</div><div class="tl-summary">更新icon，修复提交bug</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-26 17:28</div><div class="tl-summary">笔记草稿+1</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-22 14:52</div><div class="tl-summary">奇异博士再次恢复时间线</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-22 14:43</div><div class="tl-summary">优化时间线显示</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-22 02:52</div><div class="tl-summary">反向测试</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-22 02:42</div><div class="tl-summary">微调而已</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-22 02:01</div><div class="tl-summary">修复图谱乱码 + 板块页重构为文件夹首页</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-22 01:38</div><div class="tl-summary">添加了时钟，扩展了炫酷的彩虹选择线</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-22 01:09</div><div class="tl-summary">站点更名为 MaxLOL( Max's Local &amp; Online Library )</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-20 00:33</div><div class="tl-summary">meow meow meow</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-20 00:29</div><div class="tl-summary">烂书鉴赏+1（气死我了）</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-19 10:01</div><div class="tl-summary">上滑自动隐藏顶部栏，下滑呼出</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-19 09:56</div><div class="tl-summary">发布记录改为可折叠，上滑不再被遮挡</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-19 09:51</div><div class="tl-summary">修复手机端时间线布局</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-19 09:29</div><div class="tl-summary">技术文档+1：本站搭建与使用手册</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-19 09:17</div><div class="tl-summary">新增发布记录时间线：每次发布自动记录并支持一句话总结</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-19 09:13</div><div class="tl-summary">红色主题上线</div></div></li><li class="timeline-item"><div class="tl-text"><div class="tl-date">2026-08-19 07:55</div><div class="tl-summary">网站首次测试部署上线</div></div></li></ul></details></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../技术/">技术</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>傻瓜式教程教你串流手机电脑</a></div></nav><h1 class="article-title">傻瓜式教程教你串流手机电脑</h1><p show-comma="true" class="content-meta"><time datetime="2026-10-25T14:01:08.163Z">2026年10月25日</time><span>18分钟阅读</span></p></div></div><article class="popover-hint"><div class="markdown-preview-view markdown-rendered"><h1 id="零基础教程用手机低延迟操控家里的电脑">零基础教程：用手机低延迟操控家里的电脑<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#零基础教程用手机低延迟操控家里的电脑" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p>不需要懂网络，照着一步一步点就行。
+全程大约 <strong>40 分钟</strong>，其中大部分时间在等安装。
+做完之后：手机能像坐在电脑前一样操作它，延迟 30ms 左右，还能串流玩游戏。</p>
+</blockquote>
+<hr/>
+<h2 id="这份教程能帮你做到什么">这份教程能帮你做到什么<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#这份教程能帮你做到什么" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>在外面上网时，用手机打开家里的电脑</li>
+<li>用手机看电脑屏幕、点鼠标、敲键盘</li>
+<li>移动设备连接键鼠延迟低到可以玩游戏</li>
+</ul>
+<hr/>
+<h2 id="开始之前先准备这些东西">开始之前：先准备这些东西<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#开始之前先准备这些东西" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>需要什么</th><th>说明</th><th>大概花费</th></tr></thead><tbody><tr><td>一台 Windows 电脑</td><td>Win10 / Win11 都行</td><td>你已经有</td></tr><tr><td>一部安卓手机</td><td>安卓 10 以上</td><td>你已经有</td></tr><tr><td>一个 Tailscale 账号</td><td>免费注册</td><td>0 元</td></tr><tr><td>一台云服务器（VPS）</td><td><strong>国内的</strong>，有公网 IP</td><td>约 30~60 元/月（可免费试用）</td></tr></tbody></table></div>
+<blockquote>
+<p><strong>没有 VPS 也能做</strong>，只是速度会慢一些（走官方服务器，延迟 80~200ms）。
+想要低延迟就必须有 VPS，这一步不能省。</p>
+</blockquote>
+<hr/>
+<h2 id="先认识-5-个词">先认识 5 个词<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#先认识-5-个词" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>词</th><th>解释</th></tr></thead><tbody><tr><td><strong>Tailscale</strong></td><td>一个软件，装上之后两台设备就像在同一个局域网里</td></tr><tr><td><strong>DERP</strong></td><td>Tailscale 的”中转站”。两台设备直接连不上时，流量就从这里绕一下</td></tr><tr><td><strong>Sunshine</strong></td><td>装在<strong>电脑</strong>上的软件，负责把屏幕画面传出去</td></tr><tr><td><strong>Moonlight</strong></td><td>装在<strong>手机</strong>上的软件，负责接收画面、把按键传回去</td></tr><tr><td><strong>RustDesk</strong></td><td>另一种远程桌面，不接键鼠也能用触屏直接操作电脑</td></tr></tbody></table></div>
+<blockquote>
+<p>简单理解：<strong>Tailscale 负责”连得上”，Sunshine + Moonlight 负责”看得清、操作顺”。</strong></p>
+</blockquote>
+<hr/>
+<h1 id="第一步让电脑和手机互相看见tailscale">第一步：让电脑和手机互相看见（Tailscale）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#第一步让电脑和手机互相看见tailscale" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="1-1-注册账号">1-1 注册账号<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-1-注册账号" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>打开浏览器，访问 <a href="https://login.tailscale.com/start" class="external external-link">https://login.tailscale.com/start<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>用 Google / 微软 / GitHub 账号登录都行（推荐 Google）</li>
+<li>登录成功后，你会看到一个空的控制台页面</li>
+</ol>
+<p>✅ <strong>检查点</strong>：页面顶部能看到 “Machines” 字样。</p>
+<hr/>
+<h2 id="1-2-电脑上安装-tailscale">1-2 电脑上安装 Tailscale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-2-电脑上安装-tailscale" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>打开 <a href="https://tailscale.com/download/windows" class="external external-link">https://tailscale.com/download/windows<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>下载安装包，双击安装（一路 Next）</li>
+<li>安装完成后，任务栏右下角会出现 Tailscale 图标</li>
+<li>点图标 → <strong>Log in</strong> → 浏览器会跳转 → 点 <strong>Connect</strong></li>
+</ol>
+<p>✅ <strong>检查点</strong>：网页控制台的 Machines 里出现你的电脑，状态是 <strong>Connected</strong>。</p>
+<hr/>
+<h2 id="1-3-手机上安装-tailscale">1-3 手机上安装 Tailscale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-3-手机上安装-tailscale" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>在手机应用商店搜索 <strong>Tailscale</strong>，或者打开 <a href="https://tailscale.com/download/android" class="external external-link">https://tailscale.com/download/android<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>安装后打开，点 <strong>Sign in</strong>，用<strong>同一个账号</strong>登录</li>
+<li>登录后点 <strong>Connect</strong>，系统会弹窗询问是否允许创建 VPN，点<strong>允许</strong></li>
+</ol>
+<p>✅ <strong>检查点</strong>：网页控制台的 Machines 里出现你的手机。</p>
+<hr/>
+<h2 id="1-4-记住两个地址">1-4 记住两个地址<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-4-记住两个地址" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>回到网页控制台 <a href="https://login.tailscale.com/admin/machines" class="external external-link">https://login.tailscale.com/admin/machines<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>，你会看到每台设备都有一个 <code>100.x.x.x</code> 开头的地址。</p>
+<p><strong>把这两个地址记下来（或者截图）：</strong></p>
+<ul>
+<li>电脑的地址：<code>100.______</code></li>
+<li>手机的地址：<code>100.______</code></li>
+</ul>
+<blockquote>
+<p>这个地址就是以后手机”访问电脑”用的地址，像门牌号一样。</p>
+</blockquote>
+<hr/>
+<h1 id="第二步让连接变快自建中转站-derp">第二步：让连接变快（自建中转站 DERP）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#第二步让连接变快自建中转站-derp" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<blockquote>
+<p><strong>为什么需要这一步？</strong>
+Tailscale 官方的中转站在香港和东京，延迟 80~200ms，玩不了游戏。
+在自己买的国内 VPS 上搭一个中转站，延迟能降到 20ms 左右。
+<strong>这一步是整个教程里最关键的，也是最容易出错的，慢慢来。</strong></p>
+</blockquote>
+<h2 id="2-1-买一台-vps">2-1 买一台 VPS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-1-买一台-vps" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>以阿里云为例：</p>
+<ol>
+<li>打开 <a href="https://www.aliyun.com" class="external external-link">https://www.aliyun.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>，注册并实名认证</li>
+<li>搜索”云服务器 ECS”，点<strong>立即购买</strong></li>
+<li>地域选**华北2（北京）**或离你近的城市</li>
+<li>配置选<strong>最低配就行</strong>（1核2G 足够），系统选 <strong>Ubuntu 22.04</strong></li>
+<li>带宽选<strong>按固定带宽 5M</strong>（够用）</li>
+<li>付款后，在控制台找到这台服务器，记下<strong>公网 IP</strong>（形如 <code>203.0.113.10</code>，这只是示例，以你控制台显示的为准）</li>
+</ol>
+<p>✅ <strong>检查点</strong>：你能用 SSH 工具（比如 FinalShell、Xshell、MobaXterm）连上这台服务器。</p>
+<hr/>
+<h2 id="2-2-开放两个端口重要">2-2 开放两个端口（重要！）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-2-开放两个端口重要" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>进入阿里云控制台 → 云服务器 ECS → 实例 → 点进你的服务器</li>
+<li>找到<strong>安全组</strong> → 配置规则 → 入方向 → 手动添加</li>
+<li>添加两条规则：</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>端口范围</th><th>协议</th><th>授权对象</th><th>说明</th></tr></thead><tbody><tr><td><code>443/443</code></td><td>TCP</td><td><code>0.0.0.0/0</code></td><td>中转站主端口</td></tr><tr><td><code>3478/3478</code></td><td>UDP</td><td><code>0.0.0.0/0</code></td><td>打洞辅助端口</td></tr></tbody></table></div>
+<blockquote>
+<p>少开任何一个，后面都会失败。<strong>特别是 3478/UDP，最容易漏。</strong></p>
+</blockquote>
+<hr/>
+<h2 id="2-3-安装-docker">2-3 安装 Docker<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-3-安装-docker" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>用 SSH 连上服务器后，<strong>复制下面这一整行</strong>，粘贴进去回车：</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function">curl</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> -fsSL</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> https://get.docker.com</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> bash</span></span></code></pre></figure>
+<p>等它跑完（大约 1~3 分钟），再执行：</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function">docker</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> --version</span></span></code></pre></figure>
+<p>✅ <strong>检查点</strong>：能看到 <code>Docker version 2x.x.x</code> 这样的输出。</p>
+<hr/>
+<h2 id="2-4-启动中转站">2-4 启动中转站<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-4-启动中转站" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>把下面命令里的 <code>你的公网IP</code> 换成第 2-1 步记下的那个 IP</strong>（两处都要换），然后整段复制执行：</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function">docker</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> run</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> -d</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="string"> \</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">  --name</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> derp</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="string"> \</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">  --restart</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> always</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="string"> \</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">  -p</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> 443:443</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="string"> \</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">  -p</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> 3478:3478/udp</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="string"> \</span></span>
+<span data-line><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">  deepfal/tailscale-derp:latest</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="string"> \</span></span>
+<span data-line><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">  ./derper</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> -hostname</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> 你的公网IP</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> -a</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> :443</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> -stun</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> -stun-port</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 3478</span></span></code></pre></figure>
+<p>执行完，检查一下有没有跑起来：</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function">docker</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> ps</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> grep</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> derp</span></span></code></pre></figure>
+<p>✅ <strong>检查点</strong>：能看到一行包含 <code>Up</code> 的记录，端口显示 <code>0.0.0.0:443->443/tcp</code>。</p>
+<p>❌ <strong>如果没看到</strong>，执行 <code>docker logs derp</code> 看报错，最常见的是端口被占用。</p>
+<hr/>
+<h2 id="2-5-把中转站告诉-tailscale">2-5 把中转站告诉 Tailscale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-5-把中转站告诉-tailscale" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>这一步在网页上操作，不用敲命令。</p>
+<ol>
+<li>打开 <a href="https://login.tailscale.com/admin/acls/file" class="external external-link">https://login.tailscale.com/admin/acls/file<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>你会看到一个文本框。<strong>先看看里面有没有内容：</strong>
+<ul>
+<li>如果是空的（只有 <code>{}</code> 或者什么都没有）→ <strong>整段删掉</strong>，粘贴下面的内容</li>
+<li>如果里面已经有 <code>&quot;acls&quot;</code> 之类的内容 → <strong>不要整份替换</strong>，只在最后加一个 <code>&quot;derpMap&quot;</code> 段（加之前先备份）</li>
+</ul>
+</li>
+</ol>
+<p><strong>把下面这一整段复制进去，注意把 <code>你的公网IP</code> 换成你自己的（两处）：</strong></p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="json" data-theme="github-light github-dark"><code data-language="json" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">{</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="punctuation">  &quot;derpMap&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: {</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="punctuation">    &quot;OmitDefaultRegions&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">false</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="punctuation">    &quot;Regions&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: {</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="punctuation">      &quot;900&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: {</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="punctuation">        &quot;RegionID&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">900</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="punctuation">        &quot;RegionCode&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot;cn&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="punctuation">        &quot;RegionName&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot;My-CN-DERP&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="punctuation">        &quot;Nodes&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: [</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">          {</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="punctuation">            &quot;Name&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot;900a&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="punctuation">            &quot;RegionID&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">900</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="punctuation">            &quot;HostName&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot;你的公网IP&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="punctuation">            &quot;DERPPort&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">443</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="punctuation">            &quot;STUNPort&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">3478</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="punctuation">            &quot;InsecureForTests&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">true</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">          }</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">        ]</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">      }</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">    }</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">  }</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;" data-token-type="punctuation">}</span></span></code></pre></figure>
+<p>粘贴完点右上角 <strong>Save</strong>。</p>
+<blockquote>
+<p><code>InsecureForTests</code> 是干什么的？简单说就是”跳过证书检查”，省掉配置证书的麻烦。
+安全性不用担心：走中转站的流量本身已经被 Tailscale 加密了。</p>
+</blockquote>
+<p>✅ <strong>检查点</strong>：点 Save 后页面没有报红字错误。</p>
+<hr/>
+<h2 id="2-6-重启一下电脑上的-tailscale">2-6 重启一下电脑上的 Tailscale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-6-重启一下电脑上的-tailscale" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>在任务栏右下角找到 Tailscale 图标</li>
+<li>右键 → <strong>Exit</strong>（完全退出）</li>
+<li>从开始菜单重新打开 Tailscale</li>
+</ol>
+<blockquote>
+<p>手机上的 Tailscale 也关掉再打开一次。</p>
+</blockquote>
+<hr/>
+<h2 id="2-7-验证成功了没有">2-7 验证成功了没有<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-7-验证成功了没有" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>在电脑上<strong>按 <code>Win + R</code>，输入 <code>cmd</code>，回车</strong>，然后输入：</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="cmd" data-theme="github-light github-dark"><code data-language="cmd" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">tailscale netcheck</span></span></code></pre></figure>
+<p>往下翻，找到 <code>DERP latency</code> 那一块。</p>
+<p>✅ <strong>检查点</strong>：里面出现了一行 <code>cn: xx ms (My-CN-DERP)</code>，而且数字明显比 <code>hkg</code>（香港）小。</p>
+<p><strong>像这样就是成功了：</strong></p>
+<pre><code>* Nearest DERP: My-CN-DERP
+* DERP latency:
+        -  cn: 21.8ms  (My-CN-DERP)
+        - tok: 64.7ms  (Tokyo)
+        - hkg: 195.6ms (Hong Kong)
+</code></pre>
+<p>❌ <strong>如果没看到 <code>cn</code></strong>：</p>
+<ul>
+<li>检查 ACL 有没有保存成功</li>
+<li>检查 VPS 的 443 端口有没有放行（用浏览器打开 <code>https://你的公网IP</code>，出现证书警告页面就说明通了）</li>
+<li>等 1 分钟再试，配置下发需要时间</li>
+</ul>
+<hr/>
+<h1 id="第三步让手机看到电脑画面二选一">第三步：让手机看到电脑画面（二选一）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#第三步让手机看到电脑画面二选一" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>到这里要<strong>做个选择</strong>，两条路线解决的场景不一样：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>你的情况</th><th>选哪条</th><th>体验</th></tr></thead><tbody><tr><td>不接键鼠，只想在手机上点一点、看文档、改设置</td><td><strong>A 路线：RustDesk</strong></td><td>触屏直接操作，像用手机 App，延迟 100~200ms</td></tr><tr><td>要长时间打字、精确点选、接蓝牙键鼠、甚至玩游戏</td><td><strong>B 路线：Sunshine + Moonlight</strong></td><td>延迟 30~40ms，画面流畅，键鼠原生支持</td></tr></tbody></table></div>
+<blockquote>
+<p>两条路线可以<strong>都装</strong>，互不冲突。临时看一眼用 A，长时间干活用 B。</p>
+</blockquote>
+<hr/>
+<h2 id="a-路线rustdesk不接键鼠触屏直接操作">A 路线：RustDesk（不接键鼠，触屏直接操作）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-路线rustdesk不接键鼠触屏直接操作" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>适合</strong>：临时看一眼电脑、传个文件、改个设置、远程关机。</p>
+<h3 id="a-1-电脑上安装-rustdesk">A-1 电脑上安装 RustDesk<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-1-电脑上安装-rustdesk" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>打开 <a href="https://rustdesk.com/zh-cn/" class="external external-link">https://rustdesk.com/zh-cn/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>，点”下载”，选 Windows</li>
+<li>双击安装，装完会自动打开</li>
+<li>窗口里能看到”你的 ID”和一串”临时密码”</li>
+</ol>
+<h3 id="a-2-设置固定密码这样手机每次连不用问你要密码">A-2 设置固定密码（这样手机每次连不用问你要密码）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-2-设置固定密码这样手机每次连不用问你要密码" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>点右上角的三个点（或齿轮图标）→ <strong>设置</strong></li>
+<li>左侧选 <strong>安全</strong></li>
+<li>勾选 <strong>使用固定密码</strong>，输入一个自己记得住的密码，点应用</li>
+<li>同一页往下，勾选 <strong>启用直接 IP 访问</strong></li>
+</ol>
+<p>✅ <strong>检查点</strong>：主界面里原来的”临时密码”变成了”密码”，并且直接 IP 访问显示已开启。</p>
+<h3 id="a-3-手机上安装-rustdesk">A-3 手机上安装 RustDesk<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-3-手机上安装-rustdesk" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>应用商店搜索 <strong>RustDesk</strong>，或者打开 <a href="https://rustdesk.com/zh-cn/" class="external external-link">https://rustdesk.com/zh-cn/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> 选 Android。</p>
+<h3 id="a-4-用-tailscale-地址连接">A-4 用 Tailscale 地址连接<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-4-用-tailscale-地址连接" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>手机打开 RustDesk</li>
+<li>在 <strong>ID 输入框</strong>里，<strong>不要填 ID</strong>，直接填电脑的 Tailscale 地址：<code>100.______</code></li>
+<li>点 <strong>连接</strong></li>
+<li>输入 A-2 设置的固定密码</li>
+</ol>
+<p>✅ <strong>检查点</strong>：手机上出现电脑画面，手指点哪里电脑鼠标就点哪里。</p>
+<blockquote>
+<p>RustDesk 的画面有推送帧延迟，看文档、改设置没问题，<strong>看视频和玩游戏会明显卡</strong>——那种场景请走 B 路线。</p>
+</blockquote>
+<hr/>
+<h2 id="b-路线sunshine--moonlight接键鼠舒适操作">B 路线：Sunshine + Moonlight（接键鼠，舒适操作）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#b-路线sunshine--moonlight接键鼠舒适操作" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>适合</strong>：长时间办公、打字、精确操作、玩游戏。</p>
+<h3 id="b-1-先确认电脑是什么架构下错包会装不上">B-1 先确认电脑是什么架构（下错包会装不上）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#b-1-先确认电脑是什么架构下错包会装不上" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>按 <code>Win + R</code> → 输入 <code>cmd</code> → 回车，输入：</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="cmd" data-theme="github-light github-dark"><code data-language="cmd" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">echo </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">%</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">PROCESSOR_ARCHITECTURE</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">%</span></span></code></pre></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>输出</th><th>该下哪个</th></tr></thead><tbody><tr><td><code>AMD64</code></td><td><code>Sunshine-Windows-AMD64-installer.msi</code></td></tr><tr><td><code>ARM64</code></td><td><code>Sunshine-Windows-ARM64-installer.msi</code></td></tr></tbody></table></div>
+<blockquote>
+<p>99% 的电脑是 <code>AMD64</code>。<strong>下错会提示”此安装程序包无法在您的处理器类型上运行”。</strong></p>
+</blockquote>
+<hr/>
+<h3 id="b-2-在电脑上安装-sunshine">B-2 在电脑上安装 Sunshine<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#b-2-在电脑上安装-sunshine" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>打开 <a href="https://github.com/LizardByte/Sunshine/releases/latest" class="external external-link">https://github.com/LizardByte/Sunshine/releases/latest<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>在页面下方的 Assets 里，找到对应架构的 <code>.msi</code> 文件，点下载</li>
+<li>下载完，<strong>右键 → 以管理员身份运行</strong></li>
+<li>一路 Next 安装完成</li>
+</ol>
+<p>✅ <strong>检查点</strong>：任务栏出现 Sunshine 图标。</p>
+<hr/>
+<h3 id="b-3-设置-sunshine-账号">B-3 设置 Sunshine 账号<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#b-3-设置-sunshine-账号" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>打开浏览器，访问 <a href="https://localhost:47990" class="external external-link">https://localhost:47990<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>会提示”您的连接不是私密连接” → 点<strong>高级</strong> → <strong>继续前往</strong></li>
+<li>第一次进去要设置<strong>用户名</strong>和<strong>密码</strong>（自己记住）</li>
+</ol>
+<p>✅ <strong>检查点</strong>：能看到 Sunshine 的设置界面。</p>
+<hr/>
+<h3 id="b-4-在手机平板上安装-moonlight">B-4 在手机/平板上安装 Moonlight<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#b-4-在手机平板上安装-moonlight" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>应用商店搜索 <strong>Moonlight Game Streaming</strong>，或者打开 <a href="https://moonlight-stream.org" class="external external-link">https://moonlight-stream.org<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>安装后打开</li>
+</ol>
+<hr/>
+<h3 id="b-5-配对关键一步">B-5 配对（关键一步）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#b-5-配对关键一步" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>在 Moonlight 里点右上角的 <strong>+</strong> → <strong>Add PC</strong></li>
+<li>地址栏填<strong>电脑的 Tailscale 地址</strong>（就是第一步记下的 <code>100.______</code>），点 OK</li>
+<li>点刚添加的电脑图标，会出现一个 <strong>4 位数字的 PIN</strong></li>
+<li>回到电脑，打开 <a href="https://localhost:47990" class="external external-link">https://localhost:47990<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> → 点顶部 <strong>PIN</strong> → 输入那 4 位数字 → 提交</li>
+</ol>
+<p>✅ <strong>检查点</strong>：手机上的 Moonlight 出现桌面画面。</p>
+<p>❌ <strong>连不上</strong>：</p>
+<ul>
+<li>确认手机和电脑的 Tailscale 都是 Connected 状态</li>
+<li>地址一定填 <code>100.</code> 开头的，<strong>不要填 <code>192.168</code> 或 <code>10.</code> 开头</strong>的</li>
+</ul>
+<hr/>
+<h3 id="b-6-调整画质按这个填就行">B-6 调整画质（按这个填就行）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#b-6-调整画质按这个填就行" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>在 Moonlight 里点电脑图标 → 设置：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>项目</th><th>填什么</th></tr></thead><tbody><tr><td>分辨率</td><td><code>1920x1080</code></td></tr><tr><td>帧率</td><td><code>60</code></td></tr><tr><td>码率</td><td><code>20 Mbps</code></td></tr><tr><td>HDR</td><td>关</td></tr></tbody></table></div>
+<blockquote>
+<p>卡的话把码率降到 15，不要降分辨率。</p>
+</blockquote>
+<hr/>
+<h1 id="第四步日常使用">第四步：日常使用<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#第四步日常使用" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="走-a-路线rustdesk">走 A 路线（RustDesk）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#走-a-路线rustdesk" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>手机打开 RustDesk → 输入 <code>100.______</code> → 输入固定密码 → 连上。</p>
+<h2 id="走-b-路线sunshine--moonlight">走 B 路线（Sunshine + Moonlight）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#走-b-路线sunshine--moonlight" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>手机打开 Moonlight → 点电脑图标 → 选 <strong>Desktop</strong> → 开始串流。</p>
+<h2 id="关机后还能连吗">关机后还能连吗？<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#关机后还能连吗" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>能。但要按下面的设置做，否则电脑睡眠后会断线：</p>
+<ol>
+<li>控制面板 → 电源选项 → 更改计划设置</li>
+<li>“关闭显示器”设为<strong>从不</strong></li>
+<li>“使计算机进入睡眠状态”设为<strong>从不</strong></li>
+</ol>
+<blockquote>
+<p>如果电脑睡眠了，Tailscale 会断线，手机就连不上了。</p>
+</blockquote>
+<h2 id="电脑开机就自动连上">电脑开机就自动连上？<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#电脑开机就自动连上" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Tailscale：右键图标 → Settings → 勾选 <strong>Start on Login</strong></li>
+<li>Sunshine：安装时默认已设为开机自启</li>
+</ul>
+<hr/>
+<h1 id="第五步传文件可选">第五步：传文件（可选）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#第五步传文件可选" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="方法一taildrop最简单">方法一：Taildrop（最简单）<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#方法一taildrop最简单" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>在电脑的 cmd 里输入：</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="cmd" data-theme="github-light github-dark"><code data-language="cmd" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">tailscale file cp </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">&quot;D:\要传的文件.zip&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> 手机设备名:</span></span></code></pre></figure>
+<blockquote>
+<p>手机设备名在 <a href="https://login.tailscale.com/admin/machines" class="external external-link">https://login.tailscale.com/admin/machines<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> 里能看到。
+传完在手机的 Tailscale App 里会提示接收。</p>
+</blockquote>
+<h2 id="方法二rustdesk">方法二：RustDesk<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#方法二rustdesk" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>如果装了 RustDesk，连接后点工具栏的<strong>文件夹图标</strong>，左边选电脑文件、右边选手机目录，直接拖过去。</p>
+<hr/>
+<h1 id="出问题了看这里">出问题了看这里<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#出问题了看这里" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>现象</th><th>最可能的原因</th><th>怎么办</th></tr></thead><tbody><tr><td><code>netcheck</code> 里没有 <code>cn</code></td><td>ACL 没保存 / 端口没放行</td><td>重新保存 ACL；检查安全组 443 和 3478</td></tr><tr><td>RustDesk 连不上</td><td>没设固定密码 / 没开 IP 直连</td><td>回到 A-2 检查两项开关</td></tr><tr><td>RustDesk 画面很卡</td><td>正常现象</td><td>它不适合实时操作，换 B 路线</td></tr><tr><td>Sunshine 装不上</td><td>架构下错</td><td>确认是 AMD64 还是 ARM64</td></tr><tr><td>网页 47990 打不开</td><td>服务没启动</td><td>管理员打开 cmd，执行 <code>netstat -ano | findstr 47990</code></td></tr><tr><td>串流黑屏</td><td>电脑息屏了</td><td>电源计划设为”从不关闭显示器”</td></tr><tr><td>手机连不上电脑</td><td>地址填错</td><td>必须是 <code>100.</code> 开头的地址</td></tr><tr><td>画面卡、延迟高</td><td>走了中继</td><td>看第二步的 <code>cn</code> 延迟；或用蜂窝流量而不是校园 WiFi</td></tr><tr><td>鼠标指针看不见</td><td>触屏操作模式</td><td>接蓝牙鼠标，或在 Moonlight 里开”相对鼠标”</td></tr></tbody></table></div>
+<hr/>
+<h1 id="附录所有命令汇总">附录：所有命令汇总<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#附录所有命令汇总" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>按顺序复制即可（记得替换 <code>你的公网IP</code>）。</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;" data-token-type="comment"># 1. 装 Docker</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function">curl</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> -fsSL</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> https://get.docker.com</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> bash</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;" data-token-type="comment"># 2. 启动中转站</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function">docker</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> run</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> -d</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> --name</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> derp</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> --restart</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> always</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="string"> \</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">  -p</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> 443:443</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> -p</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> 3478:3478/udp</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="string"> \</span></span>
+<span data-line><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">  deepfal/tailscale-derp:latest</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="string"> \</span></span>
+<span data-line><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string">  ./derper</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> -hostname</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> 你的公网IP</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> -a</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> :443</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> -stun</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> -stun-port</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 3478</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;" data-token-type="comment"># 3. 检查是否在跑</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function">docker</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> ps</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator"> |</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function"> grep</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> derp</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;" data-token-type="comment"># 4. 出问题时看日志</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;" data-token-type="function">docker</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> logs</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> --tail</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value"> 50</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;" data-token-type="string"> derp</span></span></code></pre></figure>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="cmd" data-theme="github-light github-dark"><code data-language="cmd" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:: 电脑上验证</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">tailscale netcheck</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">tailscale </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;" data-token-type="value">status</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">echo </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">%</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">PROCESSOR_ARCHITECTURE</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;" data-token-type="operator">%</span></span></code></pre></figure>
+<hr/>
+<h1 id="最后为什么这样配就能快">最后：为什么这样配就能快<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#最后为什么这样配就能快" class="internal internal-link"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>一句话版本：</p>
+<ol>
+<li><strong>Tailscale</strong> 让手机和电脑能互相找到对方；</li>
+<li><strong>能直连时走直连</strong>，延迟最低；</li>
+<li><strong>直连失败时走 DERP</strong>，所以DERP要放在离你近的地方（国内 VPS）；</li>
+<li><strong>只想点一点就用 RustDesk</strong>，<strong>要舒服用键鼠就上 Sunshine + Moonlight</strong>——后者用硬件编码 + UDP 传输，专门为”实时画面”优化，比普通远程桌面快好几倍。</li>
+</ol>
+<p>四步缺一不可，但最影响体验的是第 2 步和第 3 步的选择。</p>
+<hr/>
+<p><em>照着做，遇到卡住的地方，先看”出问题了看这里”那张表。</em></p></div></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>关系图谱</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc"><button type="button" class="toc-header" aria-controls="toc-3" aria-expanded="true"><h3>目录</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-0" class="toc-content overflow"><li class="depth-0"><a href="#零基础教程用手机低延迟操控家里的电脑" data-for="零基础教程用手机低延迟操控家里的电脑">零基础教程：用手机低延迟操控家里的电脑</a></li><li class="depth-1"><a href="#这份教程能帮你做到什么" data-for="这份教程能帮你做到什么">这份教程能帮你做到什么</a></li><li class="depth-1"><a href="#开始之前先准备这些东西" data-for="开始之前先准备这些东西">开始之前：先准备这些东西</a></li><li class="depth-1"><a href="#先认识-5-个词" data-for="先认识-5-个词">先认识 5 个词</a></li><li class="depth-0"><a href="#第一步让电脑和手机互相看见tailscale" data-for="第一步让电脑和手机互相看见tailscale">第一步：让电脑和手机互相看见（Tailscale）</a></li><li class="depth-1"><a href="#1-1-注册账号" data-for="1-1-注册账号">1-1 注册账号</a></li><li class="depth-1"><a href="#1-2-电脑上安装-tailscale" data-for="1-2-电脑上安装-tailscale">1-2 电脑上安装 Tailscale</a></li><li class="depth-1"><a href="#1-3-手机上安装-tailscale" data-for="1-3-手机上安装-tailscale">1-3 手机上安装 Tailscale</a></li><li class="depth-1"><a href="#1-4-记住两个地址" data-for="1-4-记住两个地址">1-4 记住两个地址</a></li><li class="depth-0"><a href="#第二步让连接变快自建中转站-derp" data-for="第二步让连接变快自建中转站-derp">第二步：让连接变快（自建中转站 DERP）</a></li><li class="depth-1"><a href="#2-1-买一台-vps" data-for="2-1-买一台-vps">2-1 买一台 VPS</a></li><li class="depth-1"><a href="#2-2-开放两个端口重要" data-for="2-2-开放两个端口重要">2-2 开放两个端口（重要！）</a></li><li class="depth-1"><a href="#2-3-安装-docker" data-for="2-3-安装-docker">2-3 安装 Docker</a></li><li class="depth-1"><a href="#2-4-启动中转站" data-for="2-4-启动中转站">2-4 启动中转站</a></li><li class="depth-1"><a href="#2-5-把中转站告诉-tailscale" data-for="2-5-把中转站告诉-tailscale">2-5 把中转站告诉 Tailscale</a></li><li class="depth-1"><a href="#2-6-重启一下电脑上的-tailscale" data-for="2-6-重启一下电脑上的-tailscale">2-6 重启一下电脑上的 Tailscale</a></li><li class="depth-1"><a href="#2-7-验证成功了没有" data-for="2-7-验证成功了没有">2-7 验证成功了没有</a></li><li class="depth-0"><a href="#第三步让手机看到电脑画面二选一" data-for="第三步让手机看到电脑画面二选一">第三步：让手机看到电脑画面（二选一）</a></li><li class="depth-1"><a href="#a-路线rustdesk不接键鼠触屏直接操作" data-for="a-路线rustdesk不接键鼠触屏直接操作">A 路线：RustDesk（不接键鼠，触屏直接操作）</a></li><li class="depth-2"><a href="#a-1-电脑上安装-rustdesk" data-for="a-1-电脑上安装-rustdesk">A-1 电脑上安装 RustDesk</a></li><li class="depth-2"><a href="#a-2-设置固定密码这样手机每次连不用问你要密码" data-for="a-2-设置固定密码这样手机每次连不用问你要密码">A-2 设置固定密码（这样手机每次连不用问你要密码）</a></li><li class="depth-2"><a href="#a-3-手机上安装-rustdesk" data-for="a-3-手机上安装-rustdesk">A-3 手机上安装 RustDesk</a></li><li class="depth-2"><a href="#a-4-用-tailscale-地址连接" data-for="a-4-用-tailscale-地址连接">A-4 用 Tailscale 地址连接</a></li><li class="depth-1"><a href="#b-路线sunshine--moonlight接键鼠舒适操作" data-for="b-路线sunshine--moonlight接键鼠舒适操作">B 路线：Sunshine + Moonlight（接键鼠，舒适操作）</a></li><li class="depth-2"><a href="#b-1-先确认电脑是什么架构下错包会装不上" data-for="b-1-先确认电脑是什么架构下错包会装不上">B-1 先确认电脑是什么架构（下错包会装不上）</a></li><li class="depth-2"><a href="#b-2-在电脑上安装-sunshine" data-for="b-2-在电脑上安装-sunshine">B-2 在电脑上安装 Sunshine</a></li><li class="depth-2"><a href="#b-3-设置-sunshine-账号" data-for="b-3-设置-sunshine-账号">B-3 设置 Sunshine 账号</a></li><li class="depth-2"><a href="#b-4-在手机平板上安装-moonlight" data-for="b-4-在手机平板上安装-moonlight">B-4 在手机/平板上安装 Moonlight</a></li><li class="depth-2"><a href="#b-5-配对关键一步" data-for="b-5-配对关键一步">B-5 配对（关键一步）</a></li><li class="depth-2"><a href="#b-6-调整画质按这个填就行" data-for="b-6-调整画质按这个填就行">B-6 调整画质（按这个填就行）</a></li><li class="depth-0"><a href="#第四步日常使用" data-for="第四步日常使用">第四步：日常使用</a></li><li class="depth-1"><a href="#走-a-路线rustdesk" data-for="走-a-路线rustdesk">走 A 路线（RustDesk）</a></li><li class="depth-1"><a href="#走-b-路线sunshine--moonlight" data-for="走-b-路线sunshine--moonlight">走 B 路线（Sunshine + Moonlight）</a></li><li class="depth-1"><a href="#关机后还能连吗" data-for="关机后还能连吗">关机后还能连吗？</a></li><li class="depth-1"><a href="#电脑开机就自动连上" data-for="电脑开机就自动连上">电脑开机就自动连上？</a></li><li class="depth-0"><a href="#第五步传文件可选" data-for="第五步传文件可选">第五步：传文件（可选）</a></li><li class="depth-1"><a href="#方法一taildrop最简单" data-for="方法一taildrop最简单">方法一：Taildrop（最简单）</a></li><li class="depth-1"><a href="#方法二rustdesk" data-for="方法二rustdesk">方法二：RustDesk</a></li><li class="depth-0"><a href="#出问题了看这里" data-for="出问题了看这里">出问题了看这里</a></li><li class="depth-0"><a href="#附录所有命令汇总" data-for="附录所有命令汇总">附录：所有命令汇总</a></li><li class="depth-0"><a href="#最后为什么这样配就能快" data-for="最后为什么这样配就能快">最后：为什么这样配就能快</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>反向链接</h3><ul id="list-0" class="overflow"><li><a href="../技术/" class="internal">技术</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v5.0.0</a> © 2026</p><ul><li><a href="https://github.com/HavvMax">GitHub</a></li></ul></footer></div></div></body><script src="../static/resource-after-e13fffa1.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-8b336f9a.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-baba652b.js" type="application/javascript" data-persist="true"></script><script src="../static/resource-after-5eb75950.js" type="module" data-persist="true"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript" data-persist="true"></script><script src="../postscript-4fb63578.js" type="module" data-persist="true"></script></html>
